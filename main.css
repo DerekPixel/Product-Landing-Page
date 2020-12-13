@@ -54,3 +54,155 @@ table {
 }
 
 /*#endregion*/
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 22px;
+}
+p {
+    font-size: 16px;
+}
+
+small {
+    font-size: 13px;
+}
+strong {
+    font-weight: 600;
+}
+
+#main {
+    margin-top: 120px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(150,150,150);
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .logo {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+
+
+.album {
+    display: flex;
+}
+
+.album-imgs {
+    height: 100%;
+    /* margin-bottom: 100px; */
+}
+
+.album-main-img {
+    margin: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    min-height: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+.album-imgs .album-main-img img{
+    width: 400px;
+    height: auto;
+}
+
+.album-gallery {
+    width: 100%;
+    display: flex;
+}
+
+.album-gallery .gallery-img-container {
+    margin: 0 10px;
+    height: 100px;
+}
+
+.album-imgs .album-gallery img {
+    width: auto;
+    height: 100%;
+}
+
+.album .album-info {
+    margin: 10px;
+    padding: 0 20px;
+    text-align: right;
+}
+
+/* .album-info h1 {
+    margin: 10px 0;
+} */
+
+.album-info small {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/* .album-info p {
+    padding-left: 20px;
+} */
+
+
+
+
+.video-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.form-container {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+
+
+
+@media screen and (min-width: 1280px) {
+    #main {
+        padding: 0 100px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    #main {
+        width: 100%;
+    }
+
+    .album {
+        display: block;
+    }
+}

@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Product Landing Page</title>
 </head>
 <body>
     
+    <header id="header">
+
+        <div class="logo">
+            <img src="./images/logo.png" alt="company logo" id="header-img">
+        </div>
+
+        <nav id="nav-bar">
+            <a href="#header" class="nav-link">Link1</a>
+            <a href="#header-img" class="nav-link">Link2</a>
+            <a href="#nav-bar" class="nav-link">Link3</a>
+        </nav>
+
+    </header>
+
+    <main id="main">
+
+        <div class="album">
+            <div class="album-imgs">
+                
+                <div class="album-main-img">
+                    <img id="expandedImg" alt="Album Art" src="./images/product-image.jpg">
+                </div>
+
+                <div class="album-gallery">
+
+                    <div class="gallery-img-container">
+                        <img src="./images/product-image.jpg" alt="Album Art" onclick="imageSelector(this)">
+                    </div>
+
+                    <div class="gallery-img-container">
+                        <img src="./images/track-list.jpg" alt="Album Track List" onclick="imageSelector(this)">
+                    </div>
+
+                </div>
+            </div>
+    
+            <div class="album-info">
+
+                <h1>Under the Covers Vol.3</h1>
+
+                <small class="test">By Ninja Sex Party</small>
+
+                <p class="album-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel odio convallis, convallis tortor quis, lobortis mi. Donec facilisis rutrum justo, at dictum nisl maximus sed. Proin pellentesque tincidunt posuere. Etiam nisl erat, varius non suscipit aliquet, mattis a sem. Praesent consequat nunc et erat tempus mollis. Aliquam sed augue neque. In aliquam lorem a condimentum efficitur. Ut pellentesque, sapien ut bibendum vulputate, mauris magna tincidunt justo, id convallis sem mauris vitae ante. Mauris sed dui cursus, elementum urna cursus, feugiat ex. Fusce iaculis ac elit vitae mattis. Maecenas consequat mauris mauris, eu lacinia mi vestibulum id.
+                </p>
+            </div>
+        </div>
+
+        <div class="video-container">
+
+            <h2>Under the Covers Music Video</h2>
+
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/4E6sNvqElhU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="form-container">
+
+            <h2><strong>If you are interested in this album please submit your email</strong></h2>
+
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+    
+                <input type="email" name="email" id="email" placeholder="Enter your email here.">
+    
+                <input type="submit" value="Purchase Album" id="submit" name="submit">
+    
+            </form>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="./javascript.js"></script>
 </body>
 </html>
